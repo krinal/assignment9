@@ -41,7 +41,6 @@ $(document).ready(function() {
   }
 
   startTime();
-});
 
 function changeColor(m){
 if ((m%2) >0){
@@ -83,9 +82,9 @@ changeFont();
 
 function changeFont() {
 
-  var fontArray = [50,100,200];
+  var fontArray = [10,100,200];
   var s = fontArray.length;
-  var random = Math.floor((Math.random() * s) + 1);
+  var random = Math.floor((Math.random() * s));
       
   $("#txt").css('fontSize', fontArray[random]);
 
@@ -93,5 +92,5 @@ function changeFont() {
     
 fontCheck();
 
-
+});
 
